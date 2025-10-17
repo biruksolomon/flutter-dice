@@ -1,4 +1,4 @@
-# hello_world
+# first flutter dice project 
 
 A new Flutter project.
 
