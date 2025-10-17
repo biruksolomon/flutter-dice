@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dice/reusable_text.dart';
-
+import 'dart:math';
 class DiceRoller extends StatefulWidget{
   @override
   State<DiceRoller> createState() {
@@ -11,11 +11,13 @@ class DiceRoller extends StatefulWidget{
 
 
 class _DiceRollerState extends State<DiceRoller>{
+  
   var activedice= "assets/images/dice-3.png";
 
   void diceroll(){
+    var dicenum = Random().nextInt(6)+1;
     setState(() {
-      activedice= "assets/images/dice-2.png";
+      activedice= "assets/images/dice-$dicenum.png";
     });
 
   }
